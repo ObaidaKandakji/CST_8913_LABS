@@ -54,7 +54,7 @@ Local file system used to store files and application data.
 ### Networking (Routers & Firewalls)
 Provides secure access between the internet and internal systems.  
 
-- **Connects:** User Browser → Web Application  
+- **Connects:** User Browser --> Web Application  
 
 ---
 
@@ -85,7 +85,7 @@ Internal email server used for sending client notifications.
 ### File Storage  
 - **Choice:** **Hybrid (IaaS --> PaaS)**  
 - **Reason:** Start by migrating to IaaS first to minimize application changes and reduce migration risk. We will then transition to PaaS object storage once the application has been updated to use cloud-native storage. This allows for continued use of the storage system while moving the app to cloud which makes it cheaper.  
-- **Migration Strategy:** Lift-and-Shift (IaaS)  --> Phase 2 — Replatform (PaaS)
+- **Migration Strategy:** Lift-and-Shift (IaaS) --> Replatform (PaaS)
   
 
 ---  
