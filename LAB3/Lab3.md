@@ -70,7 +70,7 @@ Internal email server used for sending client notifications.
 
 ### Monolithic Web Application  
 - **Choice:** **PaaS**  
-- **Reason:** A PaaS is the best option because it reduces the need to manage infrastructure tasks such as updates and scaling. This means that focus of the developers can remain on making the application better rather than having to manage the servers.  
+- **Reason:** A PaaS is the best option because it reduces the need to manage infrastructure tasks such as updates and scaling. This means that the focus of the developers can remain on making the application better rather than having to manage the servers.  
 - **Migration Strategy:** Refactor  
 
 ---  
@@ -84,7 +84,7 @@ Internal email server used for sending client notifications.
 
 ### File Storage  
 - **Choice:** **Hybrid (IaaS --> PaaS)**  
-- **Reason:** Start by migrating to IaaS first to minimize application changes and reduce migration risk. We will then transition to PaaS object storage once the application has been updated to use cloud-native storage. This allows for continued use of the storage system while moving the app to cloud which makes it cheaper.  
+- **Reason:** Start by migrating to IaaS first to minimize application changes and reduce migration risk. We will then transition to PaaS object storage once the application has been updated to use cloud-native storage. This allows for continued use of the storage system while moving the app to cloud which makes it cheaper and will result in less downtime.  
 - **Migration Strategy:** Lift-and-Shift (IaaS) --> Replatform (PaaS)
   
 
