@@ -57,22 +57,22 @@ Azure Migrate doesn't have a cost to it
 
 1) **VM reservations/savings plan**  
    - VM compute across web + API + GPU lines = **$5,288.12/month**.  
-   - **1-year reservation (~41%)** → **save ≈ $2,168/month**.  
-   - **3-year reservation (~62%)** → **save ≈ $3,279/month**.
+   - **1-year reservation (~41%)** -> **save ≈ $2,168/month**.  
+   - **3-year reservation (~62%)** -> **save ≈ $3,279/month**.
 
 2) **SQL Managed Instance - Azure Hybrid Benefit**  
    - The MI line shows **$1,167.60/month** for SQL license.  
-   - Enabling **Azure Hybrid Benefit** removes that charge → **save $1,167.60/month**.
+   - Enabling **Azure Hybrid Benefit** removes that charge -> **save $1,167.60/month**.
 
 3) **Synapse Dedicated SQL pool - reduce runtime**  
    - Compute rate shown: **$7.55/hour** at **730 hours**.  
    - Scheduling **~480 hours/month (~16 h/day)** saves **(730−480) × $7.55 = $1,887.50/month**; storage/DR unchanged.
 
 4) **Cosmos DB autoscale - realistic average utilization**  
-   - Current configuration uses **100% average** → **$3,504.00/month**.  
-   - Setting **~35% average** with the same RU/s cap yields **≈ $1,226/month** → **save ≈ $2,278/month**.
+   - Current configuration uses **100% average** -> **$3,504.00/month**.  
+   - Setting **~35% average** with the same RU/s cap yields **≈ $1,226/month** -> **save ≈ $2,278/month**.
 
-5) **Front Door - reduce edge→origin pulls**  
+5) **Front Door - reduce edge->origin pulls**  
    - Current edge - origin component ≈ **$102.40**.  
    - Improving cache hit and halving origin traffic saves **≈ $51/month**.
 
